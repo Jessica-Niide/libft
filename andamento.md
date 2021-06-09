@@ -1,11 +1,11 @@
 ### Parte 1 - Biblioteca de funções:
-• memset
-• bzero
-• memcpy
+• ~~memset~~
+• ~~bzero~~
+• ~~memcpy~~
 • memccpy
-• memmove
+• ~~memmove~~
 • memchr
-• memcmp
+• ~~memcmp~~
 • strlen
 • strlcpy
 • strlcat
@@ -13,14 +13,14 @@
 • strrchr
 • strnstr
 • strncmp
-• atoi
+• ~~atoi~~
 • ~~isalpha~~
 • ~~isdigit~~
 • ~~isalnum~~
 • ~~isascii~~
 • ~~isprint~~
-• toupper
-• tolower
+• ~~toupper~~
+• ~~tolower~~
 • calloc
 • strdup
 
@@ -31,10 +31,10 @@ ft_strtrim
 ft_split
 ft_itoa
 ft_strmapi
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
-ft_putnbr_fd
+~~ft_putchar_fd~~
+~~ft_putstr_fd~~
+~~ft_putendl_fd~~
+~~ft_putnbr_fd~~
 
 ### Bônus:
 ft_lstnew
