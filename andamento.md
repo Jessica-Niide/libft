@@ -6,9 +6,9 @@
 • ~~memmove~~
 • memchr
 • ~~memcmp~~
-• strlen
-• strlcpy
-• strlcat
+• ~~strlen~~
+• ~~strlcpy~~
+• ~~strlcat~~
 • strchr
 • strrchr
 • strnstr
@@ -21,8 +21,8 @@
 • ~~isprint~~
 • ~~toupper~~
 • ~~tolower~~
-• calloc
-• strdup
+• ~~calloc~~
+• ~~strdup~~
 
 ### Parte 2 - Funções adicionais:
 ft_substr
