@@ -2,13 +2,15 @@ NAME	=	libft.a
 
 OBJS	=	*.o
 
-all:	*.c
+all:	$(NAME)
+
+$(NAME):	*.c
 		@gcc -Wall -Wextra -Werror -c *.c -I.
-		@ar -rcs $(NAME) ${OBJS}
+		@ar -rcs $(NAME) $(OBJS)
 		@ranlib $(NAME)
 
 clean:
-		@rm -f ${OBJS}
+		@rm -f $(OBJS)
 
 fclean:	clean
 		@rm -f $(NAME)

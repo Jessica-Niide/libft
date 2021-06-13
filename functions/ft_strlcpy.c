@@ -2,21 +2,21 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	char	*initial;
-	char	*final;
-	size_t	i;
+	char	*source;
+	char	*where_to;
+	size_t	index;
 
-	initial = (char *)src;
-	final = (char *)dst;
-	i = 0;
+	source = (char *)src;
+	where_to = (char *)dst;
+	index = 0;
 	if (dstsize > 0)
 	{
-		while ((i < dstsize - 1) && initial[i] != '\0')
+		while ((index < dstsize - 1) && source[index] != '\0')
 		{
-			final[i] = initial[i];
-			i++;
+			where_to[index] = source[index];
+			index++;
 		}
-		final[i] = '\0';
+		where_to[index] = '\0';
 	}
 	return (ft_strlen(src));
 }
