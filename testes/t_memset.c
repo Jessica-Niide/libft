@@ -26,24 +26,40 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	char	*str;
+	size_t	i;
+	char	*aux;
 
-	str = (char *)s;
-	while (n-- > 0)
-		*(str++) = (c % 256);
+	i = 0;
+	aux = (char *)s;
+	while (i < n)
+	{
+		*aux = (unsigned char)c;
+		i++;
+		aux++;
+	}
 	return (s);
 }
+
+// void	*ft_memset(void *s, int c, size_t n)
+// {
+// 	char	*str;
+
+// 	str = (char *)s;
+// 	while (n-- > 0)
+// 		*(str++) = (c + '0');
+// 	return (s);
+// }
 
 int main(void)
 {
 	char *b, *d;
 	memset(b,90, 4);
-	printf("%s \n", b);
-	memset(b,48, 2);
-	printf("%s \n", b);
-	memset(b,51, 10);
-	printf("%s \n", b);
-	ft_memset(d,90, 4);
-	printf("ft = %s \n", d);
+	// printf("%s \n", b);
+	// memset(b,48, 2);
+	// printf("%s \n", b);
+	// memset(b,51, 10);
+	// printf("%s \n", b);
+	ft_memset(d, 90, 4);
+	// printf("ft = %s \n", d);
 	return 0;
 }

@@ -1,12 +1,12 @@
 #include "libft.h"
 
-void	*ft_memccpy(void *s2, const void *s1, int c, size_t n)
+void	*ft_memccpy(void *d, const void *s, int c, size_t n)
 {
 	unsigned char	*initial;
 	unsigned char	*final;
 
-	initial = (unsigned char *)s1;
-	final = (unsigned char *)s2;
+	initial = (unsigned char *)s;
+	final = (unsigned char *)d;
 	while (n > 0)
 	{
 		*final = *initial;

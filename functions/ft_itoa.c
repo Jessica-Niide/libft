@@ -41,7 +41,7 @@ char	*ft_itoa(int n)
 
 	i = 0;
 	if (n == -2147483648LL || n == -2147483648)
-		str = ft_strjoin("-2", ft_itoa(147483648));
+		str = ft_strdup("-2147483648");
 	else if (n >= 0)
 	{
 		len = int_size(n);
@@ -54,7 +54,7 @@ char	*ft_itoa(int n)
 		}
 	}
 	else if (n < 0)
-		str = ft_strjoin("-", ft_itoa(-1 * n));
+		str = ft_strjoin(ft_strdup("-"), ft_itoa(-1 * n));
 	else
 		return (NULL);
 	return (str);

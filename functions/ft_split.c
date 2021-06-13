@@ -9,7 +9,7 @@ static int	get_next_index(char *str, int start, char c)
 		next_start = get_next_index(str, next_start, c);
 	else
 	{
-		while (str[next_start] != c)
+		while (str[next_start] != c && str[next_start] != '\0')
 			next_start++;
 	}
 	return (next_start);
@@ -27,7 +27,7 @@ static char	*copy_str(char *where_to, char *str, size_t start, char c)
 	index = start;
 	if (str[index])
 	{
-		while (str[index] != c)
+		while (str[index] != c && str[index] != '\0')
 			index++;
 	}
 	where_to = ft_calloc((index - start + 1), sizeof(char));
@@ -114,6 +114,6 @@ char	**ft_split(char const *s, char c)
 		index_c = get_next_index(str, index_c, c);
 		i_array++;
 	}
-	splits[i_array] = (NULL);
+	splits[array_size - 1] = (NULL);
 	return (splits);
 }

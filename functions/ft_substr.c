@@ -10,7 +10,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (start >= ft_strlen(s))
-		return ("");
+		return (ft_strdup(""));
 	if (start + len <= ft_strlen(s))
 		sub_size = len;
 	else
