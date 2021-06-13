@@ -114,6 +114,6 @@ char	**ft_split(char const *s, char c)
 		index_c = get_next_index(str, index_c, c);
 		i_array++;
 	}
-	splits[array_size - 1] = (NULL);
+	splits[i_array] = (NULL);
 	return (splits);
 }
